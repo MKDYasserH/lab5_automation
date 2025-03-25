@@ -19,7 +19,7 @@ def greet():
     greeting = 'Welcome to CI/CD 101 using GitHub Actions!'
     return greeting
 
-@app.route('/')
+@app.route('/greeting')
 def hello_world():
     html = generate_html(greet())
     return html
